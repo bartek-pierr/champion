@@ -41,6 +41,10 @@
 			align-items: center;
 			justify-content: flex-end;
 			gap: 20px;
+			@extend .transition;
+			&:hover{
+				color: $color-secondary;
+			}
 			img{
 				width: 25px;
 				height: 25px;

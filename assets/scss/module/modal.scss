@@ -1,0 +1,77 @@
+.modal{
+	display: none;
+	&.active{
+		display: block;
+		.modal__wrapper{
+			opacity: 1;
+			visibility: visible;
+		}
+	}
+	&__content {
+		&--navbar{
+			padding-left: 140px;
+			.modal__navbar{
+				visibility: visible;
+			}
+		}
+	}
+	&__wrapper{
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: 99;
+		background: #00000080;
+		opacity: 0;
+		visibility: hidden;
+		@extend .transition;
+	}
+	&__body{
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+		background: #fff;
+		padding: 30px 40px;
+		border-radius: 4px;
+		@extend .transition;
+	}
+	&__close {
+		font-style: normal;
+		position: absolute;
+		top: 5px;
+		right: 10px;
+		font-size: 20px;
+		cursor: pointer;
+	}
+
+	&__photo{
+		width: 240px;
+		height: 240px;
+		float: left;
+		margin-right: 20px;
+	}
+
+	&__navbar{
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 140px;
+		height: 100%;
+		background: $color-secondary;
+		list-style: none;
+		color: $color-primary;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		gap: 20px;
+		padding: 0;
+		margin: 0;
+		visibility: hidden;
+		li{
+			cursor: pointer;
+		}
+	}
+}

@@ -21,7 +21,7 @@ html, body {
 	p {
 		font-size: 17px;
 		line-height: 1.6;
-		font-weight: 600;
+		font-weight: 400;
 	}
 }
 
@@ -39,11 +39,13 @@ html, body {
 
 header {
 	height: $height-header;
-	position: sticky;
+	position: fixed;
 	top: 0;
 	left: 0;
+	right: 0;
 	background-color: #fff;
 	z-index: 10;
+	box-shadow: 1px 3px 10px rgba(0,0,0,.1);
 	.row {
 		display: flex;
 		justify-content: space-between;
@@ -117,6 +119,7 @@ header {
 	text-decoration: unset;
 	text-transform: uppercase;
 	z-index: 2;
+	display: inline-block;
 	@extend .transition;
 
 	&:before {

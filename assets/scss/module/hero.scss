@@ -4,6 +4,7 @@
 		max-height: 800px;
 		width: 100%;
 		overflow: hidden;
+		position: relative;
 		.row {
 			height: 100%;
 			position: relative;
@@ -34,7 +35,7 @@
 			top: 50%;
 			right: 0;
 			width: 100vw;
-			height: 100%;
+			height: 135%;
 			transform: translateY(-50%);	
 			background-color: rgba($black, .8);
 			padding: 90px;

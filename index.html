@@ -19,25 +19,25 @@
 			</div>
 			<nav>
 				<a href="/" class="active">Home</a>
-				<a href="/o-nas">O nas</a>
-				<a href="/oferta">Oferta</a>
-				<a href="/kontakt">Kontak</a>
+				<a href="#about">O nas</a>
+				<a href="#offers">Oferta</a>
+				<a href="#contact">Kontak</a>
 			</nav>
 		</div>
 	</header>
 	<section class="hero__wrapper">
 		<div class="hero__image">
-			<img src="public/images/hero-bg.webp" alt="Champion" loading="lazy">
+			<img src="public/images/hero/hero-bg.webp" alt="Champion" loading="lazy">
 		</div>
 		<div class="row">
 			<div class="hero__title">
 				<h1>Champion</h1>
 				<h2>Fronty i akcesoria meblowe</h2>
-				<a href="#" class="button button__primary">Sprawdź Ofertę</a>
+				<a href="#offers" class="button button__primary">Sprawdź Ofertę</a>
 			</div>
 		</div>
 	</section>
-	<section class="aboutUs__wrapper">
+	<section id="about" class="aboutUs__wrapper">
 		<div class="row">
 			<div class="aboutUs__title">
 				<h2>O Nas</h2>
@@ -50,11 +50,11 @@
 					in the 1960s with the release of Letraset sheets containing
 					Lorem Ipsum passages, and more recently with desktop publishing
 					software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-				<a href="#" class="button button__secondary">Poznajmy się</a>
+				<a href="/o-nas" class="button button__secondary">Poznajmy się</a>
 			</div>
 		</div>
 	</section>
-	<section class="offers__wrapper">
+	<section id="offers" class="offers__wrapper">
 		<div class="row">
 			<div class="offers__title">
 				<h2>Oferta</h2>
@@ -63,7 +63,7 @@
 				</div>
 			</div>
 			<div class="offers__card">
-				<div class="offers__cardItem">
+				<div class="offers__cardItem" data-click="toggleModal" data-offers-id="1">
 					<img src="public/images/offers/offers1.png" alt="offers">
 					<h3 class="offers__cardItemTitle">Lorem Ipsum</h3>
 					<div class="offers__cardItemHide">
@@ -71,7 +71,7 @@
 						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
 					</div>
 				</div>
-				<div class="offers__cardItem">
+				<div class="offers__cardItem" data-click="toggleModal" data-offers-id="2">
 					<img src="public/images/offers/offers2.png" alt="offers">
 					<h3 class="offers__cardItemTitle">Lorem Ipsum</h3>
 					<div class="offers__cardItemHide">
@@ -79,7 +79,7 @@
 						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
 					</div>
 				</div>
-				<div class="offers__cardItem">
+				<div class="offers__cardItem" data-click="toggleModal" data-offers-id="3">
 					<img src="public/images/offers/offers3.png" alt="offers">
 					<h3 class="offers__cardItemTitle">Lorem Ipsum</h3>
 					<div class="offers__cardItemHide">
@@ -87,7 +87,7 @@
 						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
 					</div>
 				</div>
-				<div class="offers__cardItem">
+				<div class="offers__cardItem" data-click="toggleModal" data-offers-id="4">
 					<img src="public/images/offers/offers4.png" alt="offers">
 					<h3 class="offers__cardItemTitle">Lorem Ipsum</h3>
 					<div class="offers__cardItemHide">
@@ -95,7 +95,7 @@
 						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
 					</div>
 				</div>
-				<div class="offers__cardItem">
+				<div class="offers__cardItem" data-click="toggleModal" data-offers-id="5">
 					<img src="public/images/offers/offers5.png" alt="offers">
 					<h3 class="offers__cardItemTitle">Lorem Ipsum</h3>
 					<div class="offers__cardItemHide">
@@ -103,18 +103,18 @@
 						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
 					</div>
 				</div>
-				<div class="offers__cardItem">
+				<div class="offers__cardItem" data-click="toggleModal" data-offers-id="front_1">
 					<img src="public/images/offers/offers6.png" alt="offers">
-					<h3 class="offers__cardItemTitle">Lorem Ipsum</h3>
+					<h3 class="offers__cardItemTitle">Front 1</h3>
 					<div class="offers__cardItemHide">
-						<h3>Lorem Ipsum</h3>
+						<h3>Front 1</h3>
 						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
-	<section class="contact__wrapper">
+	<section id="contact" class="contact__wrapper">
 		<div class="row">
 			<div class="contact__iframe">
 				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d80608.02863067406!2d15.726494949999998!3d50.8496677!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470ede3bb9f54cd9%3A0xc158d47122acfbc!2sJelenia%20G%C3%B3ra!5e0!3m2!1sen!2spl!4v1705793334168!5m2!1sen!2spl" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -134,14 +134,121 @@
 		<div class="row">
 			<nav class="footer__menu">
 				<a href="/" class="active">Home</a>
-				<a href="/o-nas">O nas</a>
-				<a href="/oferta">Oferta</a>
-				<a href="/kontakt">Kontak</a>
+				<a href="#about">O nas</a>
+				<a href="#offers">Oferta</a>
+				<a href="#contact">Kontak</a>
 			</nav>
 			<div class="logo__wrapper footer__logo">
 				LOGO
 			</div>
 		</div>
 	</footer>
+	<section id="modal" class="modal">
+		<div class="modal__wrapper">
+			<div class="modal__body">
+				<i class="modal__close" data-click="offModal">&#x2715;</i>
+				<div class="modal__content">
+					<ul class="modal__navbar" id="modal_navbar">
+
+					</ul>
+					<img src="" alt="" id="modal_photo" class="modal__photo">
+					<h2 id="modal_title">lorem</h2>
+					<p id="modal_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi possimus animi alias hic quasi voluptatum temporibus deserunt exercitationem autem neque cum ipsam omnis nisi vero sint quo, velit unde nulla!</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<script src="public/data/offers.js"></script>
+	<script>
+		const toggleModalEl = document.querySelectorAll('[data-click="toggleModal"]')
+		const offModalEl = document.querySelector('[data-click="offModal"]')
+		const modal = document.querySelector('#modal')
+		const bindID = ['title','description','photo']
+		const modalWrapper = modal.querySelector('.modal__wrapper')
+		const modalNavbar = modal.querySelector('.modal__navbar')
+		const modalContent = modal.querySelector('.modal__content')
+
+
+		const bindModalData = (idOffers) => {
+			if (!dataOffers[idOffers]) return false;
+			let frontsArr = []
+			if (dataOffers[idOffers]['tags'] === "front") {
+				Object.keys(dataOffers).forEach(key => {
+					if (dataOffers[key]['tags'] === "front") {
+						frontsArr.push(dataOffers[key])
+					}
+				})
+			}
+
+			modalContent.classList.remove('modal__content--navbar')
+
+
+			renderNavbar(frontsArr);
+
+			bindID.forEach(ID => {
+				const data = dataOffers[idOffers][ID]
+				const element = modal.querySelector(`#modal_${ID}`)
+
+				if (ID === 'photo') {
+					element.src = data;
+					element.setAttribute('alt', dataOffers[idOffers]['title'])
+				} else {
+					element.innerHTML = data;
+				}
+				
+			});
+
+			return true
+		}
+
+		const renderNavbar = (frontsArr) => {
+			if (!frontsArr) return false;
+
+			while (modalNavbar.firstChild) {
+				modalNavbar.firstChild.remove()
+			}
+
+			modalContent.classList.add('modal__content--navbar')
+
+			frontsArr.forEach(element => { 
+				modalNavbar.insertAdjacentHTML("beforeend", `<li data-click="toggleModal" data-offers-id="${element.key}">${element.title}</li>`);
+			})
+
+			modalNavbar.querySelectorAll('li').forEach(element => {
+				addEventToOpen(element);
+			});
+
+		}
+
+		const addEventToOpen = (element) => {
+			element.addEventListener('click', (event) => {
+				event.preventDefault()
+				const idOffers = event.currentTarget.getAttribute('data-offers-id');
+
+				if( bindModalData(idOffers) ){
+					modal.classList.add('active')
+					return true
+				};
+
+				console.error('Błąd pobrania danych')
+			})
+		}
+
+		offModalEl.addEventListener('click', (event) => {
+			modal.classList.remove('active')
+		})
+
+		modalWrapper.addEventListener('click', (event) => {
+			if (event.currentTarget === event.target) {
+				modal.classList.remove('active')
+			}
+		})
+
+		toggleModalEl.forEach(element => {
+			addEventToOpen(element);
+		})
+
+		
+	</script>
 </body>
 </html>

@@ -1,10 +1,12 @@
-.aboutUs{
-	&__wrapper{
+.aboutUs {
+	&__wrapper {
 		height: 700px;
 		background: $color-primary;
 		position: relative;
-		&:before{
-			content: '';
+		padding-bottom: 120px;
+		box-sizing: content-box;
+		&:before {
+			content: "";
 			position: absolute;
 			width: 50%;
 			left: 0;
@@ -13,10 +15,20 @@
 			height: 100%;
 			background-color: #fff;
 		}
+		&:after {
+			content: "";
+			position: absolute;
+			width: 50%;
+			left: 0;
+			top: 0;
+			z-index: 0;
+			height: 100%;
+			background-image: url("../images/pattern.svg");
+			background-repeat: no-repeat;
+		}
 	}
-	&__title{
+	&__title {
 		width: 55%;
-		background: $color-secondary;
 		padding: 80px;
 		top: 50%;
 		right: 0;
@@ -27,7 +39,18 @@
 		color: $color-primary;
 		text-align: right;
 		align-items: flex-end;
-		h2{
+		z-index: 1;
+		&:after{
+			content: '';
+			background: $color-secondary;
+			top: 0;
+			left: -80px;
+			width: 100vw;
+			height: 100%;
+			position: absolute;
+			z-index: -1;
+		}
+		h2 {
 			padding: 10px 40px;
 			background: $color-primary;
 			color: $color-secondary;
@@ -36,14 +59,18 @@
 			font-size: 48px;
 			text-transform: uppercase;
 			margin: 10px 0;
+			font-weight: 400;
 			position: relative;
-			&:after{
-				content: '';
+			z-index: 2;
+			&:after {
+				content: "";
+				position: absolute;
 				width: 50vw;
 				background-color: $color-primary;
 				left: 0;
 				top: 0;
 				height: 100%;
+				z-index: -1;
 			}
 		}
 	}

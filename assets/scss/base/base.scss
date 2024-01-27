@@ -23,6 +23,9 @@ html, body {
 		line-height: 1.6;
 		font-weight: 400;
 	}
+	& > section {
+		margin: 120px 0;
+	}
 }
 
 .transition {
@@ -94,18 +97,19 @@ header {
 			height: 180px;
 			width: 180px;
 			line-height: 180px;
-			color: #fff;
-			background: $color-primary;
+			color: $color-primary;
+			background: $color-secondary;
 			margin-left: auto;
 			&:after{
 				content: '';
 				width: 1000vw;
 				left: -100vw;
-				background-color: $color-secondary;
+				background-color: #fff;
 				height: 130%;
 				position: absolute;
 				z-index: -1;
 				bottom: -15%;
+				box-shadow: -1px 1px 10px rgba(0,0,0,.07);
 			}
 		}
 	}

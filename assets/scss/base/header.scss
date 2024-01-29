@@ -1,0 +1,129 @@
+header {
+	height: $height-header;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	background-color: #fff;
+	z-index: 10;
+	box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.1);
+	.row {
+		display: flex;
+		justify-content: space-between;
+	}
+	nav {
+		display: flex;
+		gap: 20px;
+		a {
+			height: $height-header;
+			line-height: $height-header;
+			position: relative;
+			display: block;
+			font-size: 18px;
+			text-transform: uppercase;
+			text-decoration: none;
+			font-weight: 600;
+			color: $color-primary;
+			letter-spacing: 1px;
+			@extend .transition;
+
+			&.active {
+				background: $color-primary;
+				color: $color-secondary;
+				padding: 0 10px;
+			}
+
+			&:hover {
+				color: $color-secondary;
+			}
+		}
+	}
+	.menu__burger {
+		display: none;
+		#menuToggle {
+			background-color: unset;
+			border: 0px solid;
+			cursor: pointer;
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			right: 1rem;
+			z-index: 9;
+			width: 40px;
+			height: 40px;
+			span {
+				display: block;
+				width: 33px;
+				height: 3px;
+				margin-bottom: 5px;
+				position: relative;
+				background: $color-primary;
+				border-radius: 6px;
+				z-index: 1;
+				transform-origin: 4px 0px;
+				transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
+					background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+				&:first-child {
+					transform-origin: 0% 0%;
+				}
+				&:nth-last-child(2) {
+					transform-origin: 0% 100%;
+				}
+			}
+
+			&.active {
+				span {
+					opacity: 1;
+					transform: rotate(-45deg) translate(0px, -2px);
+					&:nth-last-child(2) {
+						opacity: 0;
+						transform: rotate(0deg) scale(0.2, 0.2);
+					}
+					&:nth-last-child(3) {
+						transform: rotate(45deg) translate(-2px, -4px);
+					}
+				}
+			}
+		}
+
+		#nav_burger {
+			position: fixed;
+			width: 300px;
+			padding: 50px;
+			padding-top: 125px;
+			background: #fff;
+			list-style-type: none;
+			transform-origin: 0% 0%;
+			transform: translate(300%, 0);
+			transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+			height: 100vh;
+			right: 0;
+			top: 0;
+			text-align: right;
+			li {
+				padding: 10px 0;
+				font-size: 22px;
+				a {
+					color: $color-primary;
+					text-transform: uppercase;
+					text-decoration: none;
+				}
+			}
+			&.active {
+				transform: none;
+			}
+		}
+	}
+	.logo {
+		&__wrapper {
+			width: $height-header;
+			color: $color-primary;
+			background-color: $color-secondary;
+			font-size: 26px;
+			font-weight: 700;
+			text-align: center;
+			height: $height-header;
+			line-height: $height-header;
+		}
+	}
+}

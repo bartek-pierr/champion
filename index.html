@@ -23,6 +23,19 @@
 				<a href="#offers">Oferta</a>
 				<a href="#contact">Kontak</a>
 			</nav>
+			<div class="menu__burger">
+				<button id="menuToggle" class="menu__burgerButton">
+					<span></span>
+					<span></span>
+					<span></span>
+				</button>
+				<ul id="nav_burger">
+					<li><a href="/" class="active">Home</a></li>
+					<li><a href="#about">O nas</a></li>
+					<li><a href="#offers">Oferta</a></li>
+					<li><a href="#contact">Kontak</a></li>
+				</ul>
+			</div>
 		</div>
 	</header>
 	<section class="hero__wrapper">
@@ -168,94 +181,6 @@
 		</div>
 	</section>
 	<script src="public/data/offers.js"></script>
-	<script>
-		const toggleModalEl = document.querySelectorAll('[data-click="toggleModal"]')
-		const offModalEl = document.querySelector('[data-click="offModal"]')
-		const modal = document.querySelector('#modal')
-		const bindID = ['title','description','photo']
-		const modalWrapper = modal.querySelector('.modal__wrapper')
-		const modalNavbar = modal.querySelector('.modal__navbar')
-		const modalContent = modal.querySelector('.modal__content')
-
-
-		const bindModalData = (idOffers) => {
-			if (!dataOffers[idOffers]) return false;
-			let frontsArr = []
-			if (dataOffers[idOffers]['tags'] === "front") {
-				Object.keys(dataOffers).forEach(key => {
-					if (dataOffers[key]['tags'] === "front") {
-						frontsArr.push(dataOffers[key])
-					}
-				})
-			}
-
-			modalContent.classList.remove('modal__content--navbar')
-
-			renderNavbar(frontsArr);
-
-			bindID.forEach(ID => {
-				const data = dataOffers[idOffers][ID]
-				const element = modal.querySelector(`#modal_${ID}`)
-
-				if (ID === 'photo') {
-					element.src = data;
-					element.setAttribute('alt', dataOffers[idOffers]['title'])
-				} else {
-					element.innerHTML = data;
-				}
-				
-			});
-
-			return true
-		}
-
-		const renderNavbar = (frontsArr) => {
-			if (!frontsArr) return false;
-
-			while (modalNavbar.firstChild) {
-				modalNavbar.firstChild.remove()
-			}
-
-			modalContent.classList.add('modal__content--navbar')
-
-			frontsArr.forEach(element => { 
-				modalNavbar.insertAdjacentHTML("beforeend", `<li data-click="toggleModal" data-offers-id="${element.key}">${element.title}</li>`);
-			})
-
-			modalNavbar.querySelectorAll('li').forEach(element => {
-				addEventToOpen(element);
-			});
-
-		}
-
-		const addEventToOpen = (element) => {
-			element.addEventListener('click', (event) => {
-				event.preventDefault()
-				const idOffers = event.currentTarget.getAttribute('data-offers-id');
-
-				if( bindModalData(idOffers) ){
-					modal.classList.add('active')
-					return true
-				};
-
-				console.error('Błąd pobrania danych')
-			})
-		}
-
-		offModalEl.addEventListener('click', (event) => {
-			modal.classList.remove('active')
-		})
-
-		modalWrapper.addEventListener('click', (event) => {
-			if (event.currentTarget === event.target) {
-				modal.classList.remove('active')
-			}
-		})
-
-		toggleModalEl.forEach(element => {
-			addEventToOpen(element);
-		})
-
-	</script>
+	<script src="assets/js/scripts.js"></script>
 </body>
 </html>

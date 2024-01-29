@@ -1,5 +1,5 @@
-$color-primary: #2B2B2D;
-$color-secondary: #FFD600;
+$color-primary: #2b2b2d;
+$color-secondary: #ffd600;
 
 $font-primary: "Montserrat", sans-serif;
 $font-secondary: "Alfa Slab One", sans-serif;
@@ -8,16 +8,20 @@ $black: #101010;
 
 $height-header: 90px;
 
-*,*:after,*:before{
+*,
+*:after,
+*:before {
 	box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
 	margin: 0;
 	padding: 0;
 	font-family: $font-primary;
 	scroll-behavior: smooth;
 	overflow-x: hidden;
+	-webkit-font-smoothing: antialiased;
 	p {
 		font-size: 17px;
 		line-height: 1.6;
@@ -29,7 +33,7 @@ html, body {
 }
 
 .transition {
-	transition: all .2s ease-in-out;
+	transition: all 0.2s ease-in-out;
 }
 
 .row {
@@ -37,83 +41,11 @@ html, body {
 	margin: 0 auto;
 	height: 100%;
 	position: relative;
+	padding: 0 1rem;
 }
 
 
-header {
-	height: $height-header;
-	position: fixed;
-	top: 0;
-	left: 0;
-	right: 0;
-	background-color: #fff;
-	z-index: 10;
-	box-shadow: 1px 3px 10px rgba(0,0,0,.1);
-	.row {
-		display: flex;
-		justify-content: space-between;
-	}
-	nav {
-		display: flex;
-		gap: 20px;
-		a {
-			height: $height-header;
-			line-height: $height-header;
-			position: relative;
-			display: block;
-			font-size: 18px;
-			text-transform: uppercase;
-			text-decoration: none;
-			font-weight: 600;
-			color: $color-primary;	
-			letter-spacing: 1px;
-			@extend .transition;
 
-			&.active {
-				background: $color-primary;
-				color: $color-secondary;	
-				padding: 0 10px;
-			}
-
-			&:hover {
-				color: $color-secondary;
-			}
-		}
-	}
-}
-
-.logo{
-	&__wrapper {
-		width: $height-header;
-		color: $color-primary;
-		background-color: $color-secondary;
-		font-size: 26px;
-		font-weight: 700;
-		text-align: center;
-		height: $height-header;
-		line-height: $height-header;
-		&--offers{
-			position: relative;
-			height: 180px;
-			width: 180px;
-			line-height: 180px;
-			color: $color-primary;
-			background: $color-secondary;
-			margin-left: auto;
-			&:after{
-				content: '';
-				width: 1000vw;
-				left: -100vw;
-				background-color: #fff;
-				height: 130%;
-				position: absolute;
-				z-index: -1;
-				bottom: -15%;
-				box-shadow: -1px 1px 10px rgba(0,0,0,.07);
-			}
-		}
-	}
-}
 
 .button {
 	padding: 15px 25px;
@@ -127,7 +59,7 @@ header {
 	@extend .transition;
 
 	&:before {
-		content: '';
+		content: "";
 		position: absolute;
 		bottom: -7px;
 		right: -7px;
@@ -138,7 +70,7 @@ header {
 	}
 
 	&:after {
-		content: '';
+		content: "";
 		position: absolute;
 		bottom: 0px;
 		right: 0px;
@@ -148,8 +80,8 @@ header {
 		@extend .transition;
 	}
 
-	&:hover{
-		&:before{
+	&:hover {
+		&:before {
 			bottom: 0;
 			right: 0;
 		}
@@ -197,13 +129,13 @@ footer {
 			text-transform: uppercase;
 			text-decoration: none;
 			font-weight: 600;
-			color: $color-primary;	
+			color: $color-primary;
 			letter-spacing: 1px;
 			@extend .transition;
 
 			&.active {
 				background: $color-primary;
-				color: $color-secondary;	
+				color: $color-secondary;
 				padding: 0 10px;
 			}
 

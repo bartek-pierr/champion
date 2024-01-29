@@ -1,5 +1,6 @@
 .modal{
 	display: none;
+	margin: 0 !important;
 	&.active{
 		display: block;
 		.modal__wrapper{

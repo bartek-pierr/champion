@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Champion - O Nas</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Montserrat:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="public/css/main.css">
+</head>
+<body>
+	<header>
+		<div class="row">
+			<div class="logo__wrapper">
+				LOGO
+			</div>
+			<nav>
+				<a href="/" class="active">Home</a>
+				<a onclick="scrollToTargetAdjusted('about')">O nas</a>
+				<a onclick="scrollToTargetAdjusted('offers')">Oferta</a>
+				<a onclick="scrollToTargetAdjusted('contact')">Kontakt</a>
+			</nav>
+			<div class="menu__burger">
+				<button id="menuToggle" class="menu__burgerButton">
+					<span></span>
+					<span></span>
+					<span></span>
+				</button>
+				<ul id="nav_burger">
+					<li><a href="/" class="active">Home</a></li>
+					<li><a onclick="scrollToTargetAdjusted('about')">O nas</a></li>
+					<li><a onclick="scrollToTargetAdjusted('offers')">Oferta</a></li>
+					<li><a onclick="scrollToTargetAdjusted('contact')">Kontakt</a></li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	<section class="hero__wrapper">
+		<div class="hero__image">
+			<img src="public/images/hero/hero-bg2.jpg" alt="Champion" loading="lazy">
+		</div>
+		<div class="row">
+			<div class="hero__title">
+				<h1>O Nas</h1>
+				<h2>Lorem ipsum dolor sit amet</h2>
+				<a onclick="scrollToTargetAdjusted('contact')" class="button button__primary">Kontakt</a>
+			</div>
+		</div>
+	</section>
+	<section class="textwithphoto__wrapper">
+		<div class="row">
+			<div class="textwithphoto__title">
+				<h2>O Nas</h2>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting
+					industry. Lorem Ipsum has been the industry's standard dummy
+					text ever since the 1500s, when an unknown printer took a galley
+					of type and scrambled it to make a type specimen book. It has
+					survived not only five centuries, but also the leap into electronic
+					typesetting, remaining essentially unchanged. It was popularised
+					in the 1960s with the release of Letraset sheets containing
+					Lorem Ipsum passages, and more recently with desktop publishing
+					software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+				<a href="/#offers" class="button button__primary">Poznaj naszą ofertę</a>
+			</div>
+			<div class="textwithphoto__photo">
+				<img src="public/images/hero/hero-bg3.jpg" alt="Champion" loading="lazy">
+			</div>
+		</div>
+	</section>
+	<section class="textwithphoto__wrapper textwithphoto__wrapper--revers">
+		<div class="row">
+			<div class="textwithphoto__title">
+				<h2>Nasz Historia</h2>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting
+					industry. Lorem Ipsum has been the industry's standard dummy
+					text ever since the 1500s, when an unknown printer took a galley
+					of type and scrambled it to make a type specimen book. It has
+					survived not only five centuries, but also the leap into electronic
+					typesetting, remaining essentially unchanged. It was popularised
+					in the 1960s with the release of Letraset sheets containing
+					Lorem Ipsum passages, and more recently with desktop publishing
+					software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+				<a href="/#contact" class="button button__primary">Skontaktuj się z nami</a>
+			</div>
+			<div class="textwithphoto__photo">
+				<img src="public/images/hero/hero-bg4.jpg" alt="Champion" loading="lazy">
+			</div>
+		</div>
+	</section>
+	<section class="workers__wrapper">
+		<div class="workers__title">
+			<div class="row">
+				<h2>Poznaj nasz zespół</h2>
+			</div>
+		</div>
+		<div class="row">
+			<div class="workers__card">
+				<div class="workers__cardItem">
+					<img src="public/images/workers/worker1.jpg" alt="worker">
+					<h4>GigaWat</h4>
+					<span>burro</span>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+						Fusce imperdiet tellus orci, rutrum venenatis libero vehicula ac.
+						Aliquam pharetra tristique ligula. Curabitur sodales aliquet enim, sit amet lobortis nibh.
+					</p>
+				</div>
+				<div class="workers__cardItem">
+					<img src="public/images/workers/worker1.jpg" alt="worker">
+					<h4>GigaWat</h4>
+					<span>burro</span>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+						Fusce imperdiet tellus orci, rutrum venenatis libero vehicula ac.
+						Aliquam pharetra tristique ligula. Curabitur sodales aliquet enim, sit amet lobortis nibh.
+					</p>
+				</div>
+				<div class="workers__cardItem">
+					<img src="public/images/workers/worker1.jpg" alt="worker">
+					<h4>GigaWat</h4>
+					<span>burro</span>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+						Fusce imperdiet tellus orci, rutrum venenatis libero vehicula ac.
+						Aliquam pharetra tristique ligula. Curabitur sodales aliquet enim, sit amet lobortis nibh.
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="contact" class="contact__wrapper">
+		<div class="row">
+			<div class="contact__iframe">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d80608.02863067406!2d15.726494949999998!3d50.8496677!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470ede3bb9f54cd9%3A0xc158d47122acfbc!2sJelenia%20G%C3%B3ra!5e0!3m2!1sen!2spl!4v1705793334168!5m2!1sen!2spl" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+			</div>
+			<div class="contact__title">
+				<div class="contact__info">
+					<h2>Kontakt</h2>
+					<a href="mailto:kaczmarczykcompany@gmail.com">kaczmarczykcompany@gmail.com <img src="public/images/icons/mail.svg" width="15" height="15" /></a>
+					<a href="tel:536 206 796">536 206 796 <img src="public/images/icons/call.svg" width="15" height="15" /></a>
+					<a href="#">adres - lorem ipsum <img src="public/images/icons/location_on.svg" width="15" height="15" /></a>
+					<a href="#">facebook <img src="public/images/icons/fb.svg" width="15" height="15" /></a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer>
+		<div class="row">
+			<nav class="footer__menu">
+				<a href="/" class="active">Home</a>
+				<a onclick="scrollToTargetAdjusted('about')">O nas</a>
+				<a onclick="scrollToTargetAdjusted('offers')">Oferta</a>
+				<a onclick="scrollToTargetAdjusted('contact')">Kontakt</a>
+			</nav>
+			<div class="logo__wrapper footer__logo">
+				Champion fronty, blaty, akcesoria meblowe
+			</div>
+		</div>
+	</footer>
+	<script src="assets/js/scripts.js"></script>
+</body>
+</html>

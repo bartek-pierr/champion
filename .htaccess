@@ -2,5 +2,4 @@ RewriteEngine On
 RewriteBase /
 
 # redirect html pages to the root domain
-RewriteRule ^index\.html$ / [NC,R,L]
-RewriteRule ^about-us\.html$ /o-nas [NC,R,L]
+RewriteRule ^([^\.]+)$ $1.html [NC,L]

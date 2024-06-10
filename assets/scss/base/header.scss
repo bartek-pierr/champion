@@ -51,6 +51,7 @@ header {
 			z-index: 9;
 			width: 40px;
 			height: 40px;
+			margin-left: 20px;
 			span {
 				display: block;
 				width: 33px;
@@ -132,4 +133,8 @@ header {
 			}
 		}
 	}
+}
+
+.headerSlogan {
+	font-size: 15px;
 }

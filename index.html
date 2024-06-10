@@ -5,7 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Champion</title>
-    <link rel="shortcut icon" type="image/jpg" href="public/images/favicon.png" />
+    <link
+      rel="shortcut icon"
+      type="image/jpg"
+      href="public/images/favicon.png"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -18,9 +22,20 @@
   <body>
     <header>
       <div class="row">
-        <div class="logo__wrapper" style="padding: 14px; background-color: #2b2b2d; display: flex; align-items: center;">
-			<img src="public/images/logo-header.svg" alt="Champion - Logo">
-		</div>
+        <div style="display: flex; align-items: center;">
+          <div
+          class="logo__wrapper"
+          style="
+            padding: 14px;
+            background-color: #2b2b2d;
+            display: flex;
+            align-items: center;
+          "
+        >
+          <img src="public/images/logo-header.svg" alt="Champion - Logo" />
+        </div>
+        <p class="headerSlogan" style="margin-left: 20px; font-weight: 600;">FRONTY, BLATY<br>I AKCESORIA MEBLOWE</p>
+        </div>
         <nav>
           <a href="/" class="active">Home</a>
           <a onclick="scrollToTargetAdjusted('about')">O nas</a>
@@ -55,7 +70,14 @@
           src="public/images/logo-white-color.svg"
           alt="Champion"
           loading="lazy"
-          style="position: absolute;width: 600px;max-width: 90%;top: 50%;left: 50%;transform: translate(-50%, -50%);"
+          style="
+            position: absolute;
+            width: 600px;
+            max-width: 90%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+          "
         />
       </div>
     </section>
@@ -67,9 +89,17 @@
         <div class="textwithphoto__title">
           <h2>O Nas</h2>
           <p>
-            Działamy z myślą o tych, którzy cenią sobie nie tylko funkcjonalność, ale również estetykę w swoim otoczeniu. Nieustannie śledzimy najnowsze trendy i innowacje, aby oferować Wam rozwiązania, które idą z duchem czasu. Jako firma nie ograniczamy się jedynie do sprzedaży – chcemy być Waszym partnerem w kreowaniu wyjątkowych przestrzeni. Champion to lider wśród sprzedawców renomowanych producentów. Skontaktuj się z nami i stwórzmy coś fajnego.
+            Działamy z myślą o tych, którzy cenią sobie nie tylko
+            funkcjonalność, ale również estetykę w swoim otoczeniu. Nieustannie
+            śledzimy najnowsze trendy i innowacje, aby oferować Wam rozwiązania,
+            które idą z duchem czasu. Jako firma nie ograniczamy się jedynie do
+            sprzedaży – chcemy być Waszym partnerem w kreowaniu wyjątkowych
+            przestrzeni. Champion to lider wśród sprzedawców renomowanych
+            producentów. Skontaktuj się z nami i stwórzmy coś fajnego.
           </p>
-          <a href="/o-nas" style="display:none;" class="button button__primary">Poznaj nas</a>
+          <a href="/o-nas" style="display: none" class="button button__primary"
+            >Poznaj nas</a
+          >
         </div>
         <div class="textwithphoto__photo">
           <img
@@ -85,7 +115,14 @@
         <div class="offers__title">
           <h2>Oferta</h2>
           <p>
-            W ofercie firmy Champion znajdziesz produkty stworzone przez najbardziej renomowanych producentów frontów i akcesoriów meblowych. Jesteśmy dumni z tego, że jako doświadczony sprzedawca możemy zaoferować Wam wyjątkowe produkty, które nie tylko spełnią, ale przekroczą Wasze oczekiwania. Nasza oferta obejmuje fronty o różnorodnych stylach, od nowoczesnych po klasyczne, zawsze spełniające najwyższe standardy jakości. Oferujemy również szeroki wybór akcesoriów meblowych, które doskonale dopełnią każdy projekt.
+            W ofercie firmy Champion znajdziesz produkty stworzone przez
+            najbardziej renomowanych producentów frontów i akcesoriów meblowych.
+            Jesteśmy dumni z tego, że jako doświadczony sprzedawca możemy
+            zaoferować Wam wyjątkowe produkty, które nie tylko spełnią, ale
+            przekroczą Wasze oczekiwania. Nasza oferta obejmuje fronty o
+            różnorodnych stylach, od nowoczesnych po klasyczne, zawsze
+            spełniające najwyższe standardy jakości. Oferujemy również szeroki
+            wybór akcesoriów meblowych, które doskonale dopełnią każdy projekt.
           </p>
         </div>
         <div class="offers__card">
@@ -94,14 +131,12 @@
             data-click="toggleModal"
             data-offers-id="front_1"
           >
-		  <img src="public/images/offers/oferta-img-1.jpg" alt="offers" />
-		  <h3 class="offers__cardItemTitle">Fronty Meblowe</h3>
-		  <div class="offers__cardItemHide">
-			<h3>Fronty Meblowe</h3>
-			<p>
-			  Różnorodne style, od nowoczesnych po klasyczne.
-			</p>
-		  </div>
+            <img src="public/images/offers/oferta-img-1.jpg" alt="offers" />
+            <h3 class="offers__cardItemTitle">Fronty Meblowe</h3>
+            <div class="offers__cardItemHide">
+              <h3>Fronty Meblowe</h3>
+              <p>Różnorodne style, od nowoczesnych po klasyczne.</p>
+            </div>
           </div>
           <div
             class="offers__cardItem"
@@ -109,12 +144,12 @@
             data-offers-id="1"
           >
             <img src="public/images/offers/oferta-img-2.jpg" alt="offers" />
-            <h3 class="offers__cardItemTitle">Blaty Kuchenne i Płyty Dekoracyjne</h3>
+            <h3 class="offers__cardItemTitle">
+              Blaty Kuchenne i Płyty Dekoracyjne
+            </h3>
             <div class="offers__cardItemHide">
               <h3>Blaty Kuchenne i Płyty Dekoracyjne</h3>
-              <p>
-                Blaty kuchenne - elementy praktyczne jak i dekoracyjne.
-              </p>
+              <p>Blaty kuchenne - elementy praktyczne jak i dekoracyjne.</p>
             </div>
           </div>
           <div
@@ -155,7 +190,8 @@
             <div class="offers__cardItemHide">
               <h3>Korpusy</h3>
               <p>
-                Korpusy pozwalają na zamocowanie blatów oraz przykręcenie frontów meblowych.
+                Korpusy pozwalają na zamocowanie blatów oraz przykręcenie
+                frontów meblowych.
               </p>
             </div>
           </div>
@@ -164,15 +200,12 @@
             data-click="toggleModal"
             data-offers-id="5"
           >
-		  <img src="public/images/offers/oferta-img-6.jpg" alt="offers" />
+            <img src="public/images/offers/oferta-img-6.jpg" alt="offers" />
             <h3 class="offers__cardItemTitle">Inne</h3>
             <div class="offers__cardItemHide">
               <h3>Inne</h3>
-              <p>
-                Sprawdź w czym jeszcze możemy Ci pomóc.
-              </p>
+              <p>Sprawdź w czym jeszcze możemy Ci pomóc.</p>
             </div>
-
           </div>
         </div>
       </div>
@@ -190,7 +223,9 @@
         <div class="contact__title">
           <div class="contact__info">
             <h2>Kontakt</h2>
-            <p style="color: white;">Godziny otwarcia:<br>pon. - pt. 8:00 - 16:00</p>
+            <p style="color: white">
+              Godziny otwarcia:<br />pon. - pt. 8:00 - 16:00
+            </p>
             <a href="mailto:biuro@championfronty.com"
               >biuro@championfronty.com
               <img src="public/images/icons/mail.svg" width="15" height="15"
@@ -203,23 +238,27 @@
               >600 892 724
               <img src="public/images/icons/call.svg" width="15" height="15"
             /></a>
-            <a href="https://www.google.com/maps/place/Boles%C5%82awa+Chrobrego+46,+59-550+Wojciesz%C3%B3w/@50.9431637,15.9248338,17z/data=!3m1!4b1!4m6!3m5!1s0x470f1decc31d49ed:0x9dbf94b4ceb4851a!8m2!3d50.9431637!4d15.9248338!16s%2Fg%2F11c5fn6dxm?entry=ttu"
-                target="_blank"
-              >Biuro: Bolesława Chrobrego 46,<br>59-550 Wojcieszów
+            <a
+              href="https://www.google.com/maps/place/Boles%C5%82awa+Chrobrego+46,+59-550+Wojciesz%C3%B3w/@50.9431637,15.9248338,17z/data=!3m1!4b1!4m6!3m5!1s0x470f1decc31d49ed:0x9dbf94b4ceb4851a!8m2!3d50.9431637!4d15.9248338!16s%2Fg%2F11c5fn6dxm?entry=ttu"
+              target="_blank"
+              >Biuro: Bolesława Chrobrego 46,<br />59-550 Wojcieszów
               <img
                 src="public/images/icons/location_on.svg"
                 width="15"
                 height="15"
             /></a>
-            <a href="https://www.google.pl/maps/place/Boles%C5%82awa+Chrobrego+77e,+59-550+Wojciesz%C3%B3w/@50.9477898,15.9203266,17z/data=!3m1!4b1!4m6!3m5!1s0x470f1debcc450001:0x7fec483870422b63!8m2!3d50.9477864!4d15.9229015!16s%2Fg%2F11thlknklp?entry=ttu"
-                target="_blank"
-              >Magazyn: Bolesława Chrobrego 77e,<br>59-550 Wojcieszów
+            <a
+              href="https://www.google.pl/maps/place/Boles%C5%82awa+Chrobrego+77e,+59-550+Wojciesz%C3%B3w/@50.9477898,15.9203266,17z/data=!3m1!4b1!4m6!3m5!1s0x470f1debcc450001:0x7fec483870422b63!8m2!3d50.9477864!4d15.9229015!16s%2Fg%2F11thlknklp?entry=ttu"
+              target="_blank"
+              >Magazyn: Bolesława Chrobrego 77e,<br />59-550 Wojcieszów
               <img
                 src="public/images/icons/location_on.svg"
                 width="15"
                 height="15"
             /></a>
-            <a href="https://www.facebook.com/profile.php?id=61556210813674" target="_blank"
+            <a
+              href="https://www.facebook.com/profile.php?id=61556210813674"
+              target="_blank"
               >facebook
               <img src="public/images/icons/fb.svg" width="15" height="15"
             /></a>
@@ -235,8 +274,17 @@
           <a onclick="scrollToTargetAdjusted('offers')">Oferta</a>
           <a onclick="scrollToTargetAdjusted('contact')">Kontakt</a>
         </nav>
-        <div class="logo__wrapper footer__logo" style='font-family: "Alfa Slab One",sans-serif;display: inline-block;font-size: 28px;text-transform: uppercase;text-align: right;'>
-          Champion<br>fronty, blaty, akcesoria meblowe
+        <div
+          class="logo__wrapper footer__logo"
+          style="
+            font-family: 'Alfa Slab One', sans-serif;
+            display: inline-block;
+            font-size: 28px;
+            text-transform: uppercase;
+            text-align: right;
+          "
+        >
+          Champion<br />fronty, blaty, akcesoria meblowe
         </div>
       </div>
     </footer>

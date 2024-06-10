@@ -153,6 +153,7 @@
 		background: $color-primary;
 		.row {
 			flex-direction: column;
+			text-align: center;
 		}
 	}
 	.contact__iframe {
@@ -269,9 +270,7 @@
 			align-items: center;
 		}
 		.footer__logo {
-			position: static;
-			margin-bottom: 20px;
-			text-align: center;
+			display: none;
 		}
 		nav{
 			text-align: center;

@@ -11,144 +11,146 @@ $height-header: 90px;
 *,
 *:after,
 *:before {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html,
 body {
-	margin: 0;
-	padding: 0;
-	font-family: $font-primary;
-	scroll-behavior: smooth;
-	overflow-x: hidden;
-	-webkit-font-smoothing: antialiased;
-	p {
-		font-size: 17px;
-		line-height: 1.6;
-		font-weight: 400;
-	}
-	& > section {
-		margin: 120px 0;
-	}
+  margin: 0;
+  padding: 0;
+  font-family: $font-primary;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  p {
+    font-size: 17px;
+    line-height: 1.6;
+    font-weight: 400;
+  }
+  & > section {
+    margin: 120px 0;
+  }
 }
 
 .transition {
-	transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .row {
-	max-width: 1330px;
-	margin: 0 auto;
-	height: 100%;
-	position: relative;
-	padding: 0 1rem;
+  max-width: 1330px;
+  margin: 0 auto;
+  height: 100%;
+  position: relative;
+  padding: 0 1rem;
 }
 
-
-
-
 .button {
-	padding: 15px 25px;
-	font-weight: 600;
-	font-size: 16px;
-	position: relative;
-	text-decoration: unset;
-	text-transform: uppercase;
-	z-index: 2;
-	display: inline-block;
-	@extend .transition;
+  padding: 15px 25px;
+  font-weight: 600;
+  font-size: 16px;
+  position: relative;
+  text-decoration: unset;
+  text-transform: uppercase;
+  z-index: 2;
+  display: inline-block;
+  @extend .transition;
 
-	&:before {
-		content: "";
-		position: absolute;
-		bottom: -7px;
-		right: -7px;
-		z-index: -1;
-		width: 100%;
-		height: 100%;
-		@extend .transition;
-	}
+  &:before {
+    content: "";
+    position: absolute;
+    bottom: -7px;
+    right: -7px;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    @extend .transition;
+  }
 
-	&:after {
-		content: "";
-		position: absolute;
-		bottom: 0px;
-		right: 0px;
-		z-index: -1;
-		width: 100%;
-		height: 100%;
-		@extend .transition;
-	}
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    @extend .transition;
+  }
 
-	&:hover {
-		&:before {
-			bottom: 0;
-			right: 0;
-		}
-	}
+  &:hover {
+    &:before {
+      bottom: 0;
+      right: 0;
+    }
+  }
 }
 
 .button__primary {
-	color: $color-primary;
-	&:before {
-		background-color: #fff;
-	}
-	&:after {
-		background-color: $color-secondary;
-	}
+  color: $color-primary;
+  &:before {
+    background-color: #fff;
+  }
+  &:after {
+    background-color: $color-secondary;
+  }
 }
 
 .button__secondary {
-	color: $color-primary;
-	&:before {
-		background-color: $color-primary;
-	}
-	&:after {
-		background-color: #fff;
-	}
+  color: $color-primary;
+  &:before {
+    background-color: $color-primary;
+  }
+  &:after {
+    background-color: #fff;
+  }
 }
 
 footer {
-	height: 250px;
-	background-color: #fff;
-	margin-top: 40px;
-	.row {
-		display: flex;
-		justify-content: space-between;
-	}
-	nav {
-		display: flex;
-		flex-direction: column;
-		gap: 9px;
-		justify-content: center;
-		a {
-			line-height: 30px;
-			position: relative;
-			display: block;
-			font-size: 16px;
-			text-transform: uppercase;
-			text-decoration: none;
-			font-weight: 600;
-			color: $color-primary;
-			letter-spacing: 1px;
-			@extend .transition;
+  height: 250px;
+  background-color: #fff;
+  margin-top: 40px;
+  .row {
+    display: flex;
+    justify-content: space-between;
+  }
+  nav {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    justify-content: center;
+    a {
+      line-height: 30px;
+      position: relative;
+      display: block;
+      font-size: 16px;
+      text-transform: uppercase;
+      text-decoration: none;
+      font-weight: 600;
+      color: $color-primary;
+      letter-spacing: 1px;
+      @extend .transition;
 
-			&.active {
-				background: $color-primary;
-				color: $color-secondary;
-				padding: 0 10px;
-			}
+      &.active {
+        background: $color-primary;
+        color: $color-secondary;
+        padding: 0 10px;
+      }
 
-			&:hover {
-				color: $color-secondary;
-			}
-		}
-	}
-	.footer__logo {
-		position: absolute;
-		right: 0;
-		top: 50%;
-		transform: translateY(-50%);
-		width: 350px;
-	}
+      &:hover {
+        color: $color-secondary;
+      }
+    }
+  }
+  .footer__logo {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 350px;
+    font-family: "Alfa Slab One", sans-serif;
+    display: inline-block;
+    font-size: 28px;
+    text-transform: uppercase;
+    text-align: right;
+  }
 }
